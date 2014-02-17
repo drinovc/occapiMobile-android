@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<CheckBoxPreference
+        android:defaultValue="true"
+        android:key="remember_me"
+        android:title="@string/pref_title_remember_me"
+        android:summary="@string/pref_description_remember_me" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="auto_login"
+        android:dependency="remember_me"
+        android:title="@string/pref_title_auto_login"
+        android:summary="@string/pref_description_auto_login" />
+    
+    <PreferenceCategory 
+        android:title="@string/pref_header_alerts">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auto_refresh_alerts"
+            android:title="@string/pref_title_auto_refresh_alerts" />
+        <EditTextPreference
+            android:key="refresh_alerts_timeout"
+            android:dependency="auto_refresh_alerts"
+            android:title="@string/pref_title_refresh_alerts"
+            android:inputType="number"
+            android:maxLength="2"  />
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/pref_header_charts">
+         <CheckBoxPreference
+	        android:defaultValue="true"
+	        android:key="auto_refresh_charts"
+	        android:title="@string/pref_title_auto_refresh_charts" />
+         <EditTextPreference
+            android:key="refresh_charts_timeout"
+            android:dependency="auto_refresh_charts"
+            android:title="@string/pref_title_refresh_charts"
+            android:inputType="number" 
+            android:maxLength="2" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="@string/pref_header_api">
+        <EditTextPreference
+	        android:key="api_url"
+	        android:title="@string/pref_title_url" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- User settings -->
+    <string name="pref_header_user">User</string>
+    <string name="pref_title_remember_me">Remember me</string>
+    <string name="pref_description_remember_me"></string>
+    
+    <string name="pref_title_auto_login">Automatic login</string>
+    <string name="pref_description_auto_login"></string>
+
+    <!-- Alerts settings -->
+    <string name="pref_header_alerts">Alerts</string>
+    <string name="pref_title_auto_refresh_alerts">Auto refresh alerts</string>
+    <string name="pref_title_refresh_alerts">Refresh alerts timeout</string>
+    
+    <!-- Charts settings -->
+    <string name="pref_header_charts">Charts</string>
+    <string name="pref_title_auto_refresh_charts">Auto refresh charts</string>
+    <string name="pref_title_refresh_charts">Auto refresh timeout</string>
+    
+    <!-- API settings -->
+    <string name="pref_header_api">API</string>
+    <string name="pref_title_url">URL</string>
+
+</resources>

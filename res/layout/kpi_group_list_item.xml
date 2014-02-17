@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:background="@drawable/list_selector" >
+    
+    <!-- ImageView 
+        android:id="@+id/kpiGroupImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alert_on_list" 
+        android:layout_gravity="center_vertical"
+        /-->
+    
+    <TextView
+        android:id="@+id/kpiGroupCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:gravity="center_vertical"
+        android:text="Test"
+        android:layout_weight="1"
+        />
+    
+    <ImageView
+        android:src="@drawable/ic_disclosure"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        />
+        
+
+</LinearLayout>

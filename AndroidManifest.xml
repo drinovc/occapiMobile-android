@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.drinovc.occapimobile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="helpers.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.drinovc.occapimobile.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.drinovc.occapimobile.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.drinovc.occapimobile.KpiGroupsActivity"
+            android:label="@string/title_activity_kpigroups" >
+        </activity>
+        <activity
+            android:name="com.drinovc.occapimobile.KpisActivity"
+            android:label="@string/title_activity_kpis" >
+        </activity>
+        <activity
+            android:name="com.drinovc.occapimobile.AlertsActivity"
+            android:label="@string/title_activity_alerts"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.drinovc.occapimobile.ChartActivity"
+            android:label="@string/title_activity_chart"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.drinovc.occapimobile.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="com.drinovc.occapimobile.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+</manifest>
